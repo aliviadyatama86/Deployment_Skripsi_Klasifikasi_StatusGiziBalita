@@ -6,7 +6,7 @@ import os
 import datetime
 
 # === Load model ===
-bundle = joblib.load("final_model_status_gizi.sav")
+bundle = joblib.load("final_klasifikasi_gizi.sav")
 model = bundle["model"]
 selected_features = bundle["features"]
 
@@ -157,3 +157,4 @@ if grafik_btn:
             st.info(f"Belum ada data prediksi untuk balita bernama {nama}.")
     else:
         st.info("Belum ada data riwayat tersimpan.")
+
